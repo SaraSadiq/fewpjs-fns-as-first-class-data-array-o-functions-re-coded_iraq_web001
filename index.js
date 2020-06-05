@@ -1,28 +1,48 @@
 
+function wakeDog(dogName, dogBreed) {
+    
+    console.log(`Wake ${dogName} the ${dogBreed}`)
+    let message = `Wake ${dogName} the ${dogBreed}`
+    return message;
 
-
-  function wakeDog() {
-    let routine=['Xerox','Border Collie']
-    console.log()
-
 }
 
-function leashDog() {
-  console.log("Leash Byron the poodle");
+function leashDog(dogName, dogBreed) {
+  console.log(`Leash ${dogName} the ${dogBreed}`);
+  let message = `Leash ${dogName} the ${dogBreed}`
+  return message;
 }
-function walkToPark() {
-  console.log("Walk to the park with Byron the poodle");
+function walkToPark(dogName, dogBreed) {
+  console.log(`Walk to the park with ${dogName} the ${dogBreed}`);
+  let message = `Walk to the park with ${dogName} the ${dogBreed}`
+  return message;
 }
-function throwFrisbee() {
-  console.log("Throw the frisbee for Byron the poodle");
+function throwFrisbee(dogName, dogBreed) {
+  console.log(`Throw the frisbee for ${dogName} the ${dogBreed}`);
+  let message = `Throw the frisbee for ${dogName} the ${dogBreed}`
+  return message;
 }
-function walkHome() {
-  console.log("Walk home with Byron the poodle");
+function walkHome(dogName, dogBreed) {
+  console.log(`Walk home with ${dogName} the ${dogBreed}`);
+  let message = `Walk home with ${dogName} the ${dogBreed}`
+  return message;
 }
-function unleashDog() {
-  console.log("Unleash Byron the poodle");
+function unleashDog(dogName, dogBreed) {
+  console.log(`Unleash ${dogName} the ${dogBreed}`);
+  let message = `Unleash ${dogName} the ${dogBreed}`
+  return message;
 }
+
+const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
+console.log(routine.length);
+let arry = []
 
 function exerciseDog(dogName,dogBreed) {
 
+  console.log(routine.length);
+  for (let i = 0: i<routine.length; i++){
+    arry += routine[i](dogName, dogBreed);
+      }
+      return arry
 }
+exerciseDog ("Bryon" , "poodle")
